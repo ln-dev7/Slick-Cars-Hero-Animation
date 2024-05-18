@@ -1,18 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
 
-  color-scheme: light dark;
-  color: #242424;
-  background-color: #FFF;
+  color: #fff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.main {
+  transition: background 0.75s cubic-bezier(0.32, 0, 0.67, 1);
+}
+
+.bg-1 {
+  background: radial-gradient(
+    94.62% 89.4% at 56.35% 71.24%,
+    #b22de8 0%,
+    #470064 100%
+  );
+}
+
+h1 {
+  background: linear-gradient(180deg, #fff 36.17%, rgba(255, 255, 255, 0) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
